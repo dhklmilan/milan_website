@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Milan Dhakal &#8211; EcoMilan</title>
+</head>
+<body>
+    <div class="top-bar-container">
+        <header class="site-header">
+            <h1><a href="index.html">Milan Dhakal</a></h1>
+            <h2>EcoMilan</h2>
+        </header>
+        <div class="menu-bar-container">
+            <ul id="menu-bar" class="nav-menu"> 
+                <li id="menu-item-128" class="menu-item"><a href="education.html">Education and Skills</a></li>
+                <li id="menu-item-129" class="menu-item"><a href="portfolio.html">Portfolio</a></li>
+                <li id="menu-item-130" class="menu-item"><a href="projects.html">Projects and Internships</a></li>
+                <li id="menu-item-132" class="menu-item"><a href="research.html">Research Experiences</a></li>
+                <li id="menu-item-133" class="menu-item"><a href="gallery.html">Photo Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <link rel="stylesheet" href="gallery.css" />
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <header>
+        <h1>My Photo Gallery</h1>
+        <p>A collection of photos I captured over time.</p>
+    </header>
+    <main>
+        <div class="gallery">
+            <!-- Add dummy image names (pc1.jpg, pc2.jpg...) -->
+            <img src="fire2022.jpg" alt="Photo 1" class="gallery-item">
+            <img src="gee.png" alt="Photo 2" class="gallery-item">
+            <img src="r.png" alt="Photo 3" class="gallery-item">
+            <!-- Add more images -->
+            <img src="html.jpg" alt="Photo 4" class="gallery-item">
+            <img src="htmlcss.png" alt="Photo 5" class="gallery-item">
+            <img src="smc-logo-circle.png" alt="Photo 6" class="gallery-item">
+            <!-- Add up to pc30 -->
+        </div>
+    </main>
+
+    <!-- Modal for Image Preview -->
+    <div class="modal" id="image-modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div class="zoom-controls">
+            <button id="zoom-in">+</button>
+            <button id="zoom-out">-</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for Modal and Zooming
+        const modal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-img');
+        const closeBtn = document.querySelector('.close');
+        const zoomInBtn = document.getElementById('zoom-in');
+        const zoomOutBtn = document.getElementById('zoom-out');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        let zoomLevel = 1;
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                modal.style.display = 'block';
+                modalImg.src = item.src;
+                zoomLevel = 1; // Reset zoom level
+                modalImg.style.transform = `scale(${zoomLevel})`;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        zoomInBtn.addEventListener('click', () => {
+            zoomLevel += 0.1;
+            modalImg.style.transform = `scale(${zoomLevel})`;
+        });
+
+        zoomOutBtn.addEventListener('click', () => {
+            if (zoomLevel > 0.1) {
+                zoomLevel -= 0.1;
+                modalImg.style.transform = `scale(${zoomLevel})`;
+            }
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+   <!-- Copyright Section -->
+   <footer class="footer">
+    <div class="footer-content">
+        <span>&copy; 2024 Milan Dhakal. All rights reserved.</span>
+        <span>All content is protected under license. Unauthorized use is prohibited.</span>
+    </div>
+</footer>
+</body>
+</html>
+
+
+<link rel="stylesheet" href="education.css">
+
+
+
+<!-- Back to Top Arrow -->
+<a href="#top" id="back-to-top" class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+</a>
+<script>
+    // Show the "back to top" button when scrolled 200px down
+    window.onscroll = function() {
+        var backToTop = document.getElementById('back-to-top');
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    };
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">

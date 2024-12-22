@@ -1,0 +1,238 @@
+/* to make clickable link to header and make similar to homepage pattern, yellow sensative */
+/* Make header link look like plain text but clickable(education bata homepage  ma aaune */
+.site-header h1 a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent <h1> */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: color 0.3s ease; /* Add a smooth color transition */
+}
+
+.site-header h1 a:hover {
+    color: #ffa500; /* Change color on hover */
+}
+
+
+
+/* Apply flexbox to center the page */
+body {
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    justify-content: flex-start; /* Align elements to the top of the page */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Take full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: ; /* Optional: Set a background color for the page */
+}
+
+/* Style for the Education heading */
+.education-heading {
+    text-align: left; /* Align the text to the left */
+    font-size: 2.5em; /* Font size for the heading */
+    color: rgb(124, 124, 206); /* Set text color to blue */
+    margin-top: 90px; /* Add space from the top */
+    margin-right: 42%; /* Adjust this value to shift the heading slightly to the left */
+    margin-bottom: 5px; /* Optional: Add space below the heading */
+}
+
+
+/* Education section style */
+.education-section {
+    padding: 0.8em;
+    background-color: #f4f4f4; /* Light gray background */
+    border-radius: 8px;
+    max-width: 800px;
+    margin-top: 20px; /* Add space from the Education heading */
+    font-family: Arial, sans-serif;
+}
+
+/* Education section heading style */
+.education-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+/* Style for each education item */
+.education-item {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    background-color: #fff; /* White background for each item */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.education-item h3 {
+    color: #007BFF;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+
+.education-item h3 a {
+    color: #007BFF; /* Match link color to the heading color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Add a hover effect */
+}
+
+.education-item h3 a:hover {
+    color: #0056b3; /* Darken color on hover */
+}
+
+.education-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.education-item {
+    display: flex; /* Align text and logo side by side */
+    align-items: flex-start;
+    gap: 1.5em; /* Space between text and logo */
+    margin-bottom: 2em; /* Space below each education item */
+}
+
+.education-text {
+    flex: 2; /* Text takes more space */
+    font-family: 'YourFont', sans-serif; /* Use your previous font */
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.education-logo {
+    flex: 1; /* Logo takes less space */
+    display: flex;
+    justify-content: center; /* Center align the logo horizontally */
+    align-items: center; /* Center align the logo vertically */
+}
+
+.education-logo img.logo {
+    width: 120px; /* Adjust size of the logo */
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+.education-logo img.logo:hover {
+    transform: scale(1.1); /* Slightly enlarge logo on hover */
+}
+
+
+/* Skills Section */
+.skills-section {
+    padding: 2em;
+    background-color: #f4f4f4; /* Light gray background */
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.skills-heading {
+    font-size: 2.5em;
+    color: #007BFF; /* Blue color for the heading */
+    margin-bottom: 1em;
+}
+
+.skills-description {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 2em;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em; /* Space between each skill item */
+    text-align: center;
+}
+
+.skill-item {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+.skill-item h3 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-bottom: 0.5em;
+}
+
+.skill-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer Section Styling */
+.footer {
+    background-color: #333;  /* Dark background */
+    color: #fff;  /* White text */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+    width: 100%; /* Full width */
+    position: relative; /* Ensure proper alignment */
+    left: 0;
+     /* Space above the footer */
+}
+
+/* Footer Content */
+.footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack content vertically */
+    gap: 10px; /* Space between elements */
+}
+
+
+/* Footer Text Styling */
+.footer span {
+    font-size: 1rem; /* Standard font size */
+    color: #fff; /* White text color */
+    margin: 5px 0; /* Margin for spacing */
+}
+
+/* Bold First Span (Copyright) */
+.footer span:first-child {
+    font-weight: 600; /* Semi-bold for emphasis */
+}
+
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .footer .footer-content {
+        gap: 5px; /* Reduce spacing for smaller screens */
+    }
+
+    .footer i {
+        font-size: 20px; /* Slightly smaller icon size */
+    }
+
+    .footer span {
+        font-size: 0.9rem; /* Adjust text size for readability */
+    }
+}

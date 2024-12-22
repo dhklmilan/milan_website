@@ -1,0 +1,193 @@
+/* to make clickable link to header and make similar to homepage pattern, yellow sensative */
+/* Make header link look like plain text but clickable(education bata homepage  ma aaune */
+.site-header h1 a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent <h1> */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: color 0.3s ease; /* Add a smooth color transition */
+}
+
+.site-header h1 a:hover {
+    color: #ffa500; /* Change color on hover */
+}
+
+
+/* General Body and Layout */
+body {
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    justify-content: flex-start; /* Align elements to the top of the page */
+    align-items: center; /* Center horizontally */
+    min-height: 200vh; /* Take full viewport height */
+    margin: 0; /* Remove default margin */
+    margin-top: 2cm;
+    margin-bottom: 0cm;
+    background-color: #fafafa; /* Optional: Set a background color for the page */
+}
+/* Portfolio Header Section Styling */
+.portfolio .text-container h2,
+.portfolio .text-container h3 {
+    color: #007BFF; /* Blue color for header */
+    font-size: 1.8rem; /* Adjust font size if needed */
+    font-weight: bold; /* Make the header text bold */
+    margin-bottom: 10px; /* Space below the header */
+}
+
+/* Portfolio Section Styling */
+.portfolio {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify; /* Justified text */
+    width: 28cm; /* Adjustable width for each portfolio box */
+    min-width: 300px; /* Minimum width for responsiveness */
+    height: 12cm; /* Height adjusts based on content */
+    position: relative; /* For positioning the image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; /* Space between sections */
+    justify-content: center;
+    flex: 2; /* Text takes more space */
+    font-family: 'YourFont', sans-serif; /* Use your previous font */
+    font-size: 1em;
+    line-height: 1.6;
+     /* Center content vertically */
+}
+
+/* Image Container (Positioned in the bottom-right) */
+.image-container {
+    position: absolute;
+    bottom: 95px;
+    right: 20px;
+    width: 6.5cm; /* Adjustable size of the image */
+    height: auto;
+}
+
+.portfolio-image {
+    width: 100%; /* Image takes up full width of its container */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+
+/* Title Styling */
+.portfolio h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.portfolio p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-right: 7cm;
+    text-align: justify; /* Justified text for paragraphs */
+}
+
+/* Button Container: Make a container to align the button to the right */
+.button-container {
+    width: 100%; /* Make the button container span the full width of the portfolio section */
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+    margin-top: 20px; /* Adjust space between text and button */
+}
+
+/* Button Styling (Green color for the button) */
+button {
+    padding: 12px 24px;
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .portfolio {
+        width: 80%; /* Full width on smaller screens */
+    }
+
+    .portfolio-image {
+        width: 80px; /* Smaller image on smaller screens */
+    }
+}
+
+
+/* Specific Styling for the Fire Image */
+.fire-image {
+    width: 100%; /* Custom width for this image */
+    margin: auto; /* Center align */
+    display: block; 
+    /* Ensures centering works */
+}
+
+
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer Section Styling */
+.footer {
+    background-color: #333;  /* Dark background */
+    color: #fff;  /* White text */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+    width: 100%; /* Full width */
+    position: relative; /* Ensure proper alignment */
+    left: 0;
+     /* Space above the footer */
+}
+
+/* Footer Content */
+.footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack content vertically */
+    gap: 10px; /* Space between elements */
+}
+
+/* Footer Icon Styling */
+.footer i {
+    font-size: 24px;  /* Icon size */
+    margin-bottom: 10px;
+    color: #007BFF;  /* Icon color */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Icon */
+.footer i:hover {
+    color: #0056b3;  /* Change icon color on hover */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Footer Text Styling */
+.footer span {
+    font-size: 1rem; /* Standard font size */
+    color: #fff; /* White text color */
+    margin: 5px 0; /* Margin for spacing */
+}
+
+/* Bold First Span (Copyright) */
+.footer span:first-child {
+    font-weight: 600; /* Semi-bold for emphasis */
+}
+

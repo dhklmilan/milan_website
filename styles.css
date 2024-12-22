@@ -1,0 +1,460 @@
+/* General Reset */
+body {
+    margin: 0.9;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Bar Styles */
+.top-bar-container {
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: flex-start; /* Align menu items to the left */
+    background-color: #32373c; /* Background color for the bar */
+    padding: 1em 1em;
+    color: white; /* Text color */
+    position: fixed;
+    top: 0;
+    left: 0; /* Ensure it's aligned to the left */
+    width: 100%;
+    z-index: 800;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.site-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header h1 {
+    margin: 0; /* Reset margin to avoid extra spacing */
+    font-size: 1.5em; /* Adjust font size to fit within a single line */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden; /* Ensure it doesn't overflow the container */
+    text-overflow: ellipsis; /* Add ellipsis if text is too long */
+}
+
+
+.site-header h2 {
+    margin: 0.2em 0;
+    font-size: 1em;
+    font-weight: normal;
+    color: #bbb; /* Slightly lighter color for subtitle */
+}
+/* Menu Bar Styles */
+.menu-bar-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    padding-left: 12em; /* (left right milaune)Add padding to move menu slightly from the left edge */
+    width: 100%; /* Ensure it spans across the full width of the page */
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0.8em;
+    padding: 4px;
+    display: flex;
+    gap: 2em; /* Reduced spacing between menu items */
+    width: 100%; /* Ensure menu items fill the width */
+}
+
+.nav-menu .menu-item {
+    color: white;
+    font-size: 1.2em; /* Font size for menu items */
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.nav-menu .menu-item a {
+    color: inherit; /* Ensures the link inherits the color from the menu item */
+    text-decoration: none; /* Removes default link underlining */
+}
+
+.nav-menu .menu-item:hover {
+    color: #ffa500; /* Highlight color on hover */
+}
+
+.nav-menu .menu-item a:hover {
+    color: #ffa500; /* Ensures the link text changes color on hover */
+}
+
+/* Main Content Padding */
+main {
+    padding-top: 2em; /* Increase padding to ensure content starts below the fixed top bar */
+    margin-left: 1em; /* Align content slightly left */
+    margin-right: 5em; /* Align content slightly right for consistency */
+}
+/* Make sure the body or parent element allows for proper image styling */
+body {
+    margin: 0;
+    padding: 0;
+    height: 50vh; /* Full height of the viewport */
+}
+
+
+/* Make sure the body or parent element allows for proper image styling */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Cover Photo Styles */
+img.img-fluid {
+    width: 100%; /* Make the image fill the container horizontally */
+    height: auto; /* Keep the aspect ratio */
+    object-fit: cover; /* Fill the container while maintaining the aspect ratio, cropping if necessary */
+    object-position: center; /* Center the image in the container */
+}
+
+/* To set a specific height for the image, you can define the height as well */
+ /* Parent container styles */
+ .cover-photo {
+    position: relative; /* Allows child elements to be positioned absolutely */
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.cover-photo img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    display: block;
+}
+
+/* Text overlay styles */
+.pinfo {
+    position: absolute; /* Position relative to the .cover-photo */
+    bottom: 0em; /* Distance from the bottom */
+    left: 50%; /* Horizontal centering */
+    transform: translateX(-50%); /* Center alignment fix */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 20px 20px; /* Padding around the text */
+    border-radius: 8px; /* Rounded corners for the text box */
+    text-align: center; /* Center-align text */
+    font-size: 1em; /* Adjust font size */
+}
+
+.pinfo ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+.pinfo li {
+    display: flex;
+    align-items: center;
+    gap: 0.5em; /* Space between the icon and text */
+}
+
+.pinfo i {
+    font-size: 1.2em; /* Adjust icon size */
+}
+
+
+
+/* Styling the location div */
+.location {
+    font-size: 1.2em; /* Adjust font size of the text */
+    color: #333; /* Text color */
+    display: flex;
+    align-items: center;
+    margin: 6cm; /* Align icon and text */
+}
+
+.additional-text {
+    padding: 15px;     /* Adds padding inside the box around the text */
+    background-color: #f4f4f4;  /* Adds a background color for better visibility */
+    display: flex;  /* Use Flexbox for centering */
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;  /* Center content vertically */
+    text-align: center;  /* Ensure text is centered */
+    font-family: 'Poppins', sans-serif;  /* Attractive font */
+    font-size: 1.2rem;  /* Adjust font size */
+    color: #efcfcf;  /* Dark text color for better readability */
+    border-radius: 20px;  /* Rounded corners for the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    max-width: 900px;  /* Set a maximum width to avoid overly stretched content */
+    margin: 0.5cm auto 0 auto;  /* Center the section vertically with margin on top and drop dowwnn */
+}
+
+.additional-text h3 {
+    font-family: 'Roboto', sans-serif;  /* More attractive heading font */
+    font-size: 2rem;  /* Increase font size for headings */
+    color: #007BFF;  /* Blue color for headings */
+    margin-bottom: 20px;  /* Space between heading and text */
+}
+
+.additional-text p {
+    font-size: 1.1rem;  /* Slightly smaller font size for text */
+    line-height: 1.8;  /* Add line-height for better readability */
+    color: #555;  /* Lighter color for the paragraph text */
+}
+
+
+
+/* Container for the email */
+.email-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Email text style */
+.email-link {
+    font-family: 'Open Sans', sans-serif; /* More attractive font for email */
+    font-size: 1.5rem;  /* Medium to large font size */
+    font-weight: 600;  /* Bold for emphasis */
+    color: #007BFF;  /* Blue color for the email */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transitions */
+}
+
+/* Hover and focus effects */
+.email-link:hover, .email-link:focus {
+    color: #0056b3;  /* Darker blue on hover */
+    transform: scale(1.05);  /* Slightly grow the link */
+}
+
+.email-link:active {
+    color: #00408b;  /* Even darker on active click */
+}
+
+
+
+
+
+
+
+
+
+
+/* Add space between About Me section and Social Media Links */
+.about-me-section {
+    margin-top: 0cm;
+    margin-bottom: 2cm; /* Add space after the About Me section */
+}
+
+#about {
+    padding: 15px 0; /* Add padding on top and bottom */
+    background-color: #ffffff; /* Light background color */
+}
+
+#about .container {
+    max-width: 800px; /* Limit the width */
+    margin: 0 auto; /* Center the section */
+    padding-left: 2cm; /* Add 2cm margin on the left */
+    padding-right: 2cm; /* Add 2cm margin on the right */
+}
+
+#about h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+
+
+
+
+/* Social Media Links Section */
+.social-media-links {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.social-media-links h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.social-media-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media-links ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.social-media-links ul li a {
+    font-size: 2rem;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.social-media-links ul li a:hover {
+    color: #0073e6; /* Color on hover, can be customized */
+}
+#cv {
+    padding: 15px 0;
+    background-color: #ffffff; /* Light background color */
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+}
+
+#cv .container {
+    max-width: 800px;
+    width: 100%; /* Ensures it takes up full width */
+    margin: 0 auto;
+}
+
+#cv h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#cv p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+#cv .btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    background-color: #007BFF; /* Blue button */
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+#cv .btn:hover {
+    background-color: #7db8f8; /* Lighter blue on hover */
+}
+
+#cv .btn:active {
+    background-color: #00408b; /* Darker blue on active click */
+}
+
+
+
+
+
+/* Back to Top Arrow Styles */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Initially hidden */
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s, transform 0.3s;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+#back-to-top i {
+    font-size: 24px;
+}
+
+#back-to-top.show {
+    display: block; /* Display when scrolled down */
+    opacity: 1;
+    transform: translateY(0); /* Smooth transition */
+}
+
+#back-to-top:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+#back-to-top:active {
+    background-color: #00408b; /* Even darker on active click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer section styling */
+.footer {
+    background-color: #333;  /* Dark background */
+    color: #fff;  /* White text */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer i {
+    font-size: 24px;  /* Icon size */
+    margin-bottom: 10px;
+    color: #007BFF;  /* Icon color */
+}
+
+.footer span {
+    font-size: 1rem;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.footer span:first-child {
+    font-weight: 600;  /* Make the copyright text bold */
+}
+
+/* Hover effects for the copyright icon */
+.footer i:hover {
+    color: #0056b3;  /* Change icon color on hover */
+    cursor: pointer;
+}
+
+/* Styles for mobile devices if not work please remove this*/
+@media (max-width: 768px) {
+    .menu-bar-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-menu {
+        gap: 1em; /* Reduce spacing for smaller screens */
+    }
+}
+
+
+
+
+
+
